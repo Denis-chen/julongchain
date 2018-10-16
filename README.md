@@ -7,25 +7,42 @@
 
 ## 如何编译
 编译环境：  <br/>
-集成开发环境：IntelliJ IDEA 2017.3.3  <br/>
+集成开发环境： IntelliJ IDEA 2017.3.3  <br/>
 JAVA开发环境：JDK 1.8.0_151  <br/>
 Maven依赖管理工具：Maven 3.5.2  <br/>
 代码版本管理工具：Git  <br/>
 
 编译步骤：  <br/>
-1.从GitHub上下载项目源码。打开IntelliJ IDEA,选择菜单File -> New -> Project from Version Control -> Git打开Clone Repository对话框  <br/>在URL文本框输入本项目的地址<i>https://github.com/JulongChain/julongchain.git</i>，然后点击"Test"按钮，测试链接连接是否成功。待连接成功后，在Directory文本框输入或选择项目工作文件夹。最后，点击Clone开始下载源码  <br/>
+1.从GitHub上下载项目源码。
+<ul>
+<li>打开IntelliJ IDEA,选择菜单File -> New -> Project from Version Control -> Git打开Clone Repository对话框。</li>
+<li>在URL文本框输入本项目的地址<i>https://github.com/JulongChain/julongchain.git</i>，然后点击"Test"按钮，测试链接连接是否成功。</li>
+<li>待连接成功后，在Directory文本框输入或选择项目工作文件夹。</li>
+<li>最后，点击Clone开始下载源码。</li>
+</ul><br/>
   
-2.添加框架支持：项目名字右键 => Add Framework Support,Java EE version选择Java EE 8,勾选Maven选项  <br/>
+2.添加框架支持。
+<ul>
+<li>项目名字右键 -> Add Framework Support。</li>
+<li>Java EE version选择Java EE 8,勾选Maven选项。</li>
+</ul><br/>
 
-3.设置Project环境：选择菜单File => Project Structure… => Project,Project SDK选择已安装的JDK 1.8  <br/>
-  Project language level 修改为8  <br/>
+3.设置Project环境。
+<ul>
+<li>选择菜单File -> Project Structure, 打开项目结构窗口。</li>
+<li>左边导航选择Project,Project SDK选择已安装的JDK 1.8，Project language level 修改为8。</li>
+<li>左边导航选择Modules，右边窗口会展开源码目录，展开并选中src/main/proto目录，并点击斜上方的"Resources"，可将其标识为资源。点击“Apply”或“OK”保存并退出。</li>
+</ul><br/>
   
-4.Maven导入依赖包：pom.xml右键 => Maven => Reimport  <br/>
+4.Maven导入依赖包。
+<ul>
+<li>找到pom.xml，右键在下拉菜单选择Maven -> Reimport,等待Maven下载完成。</li>
+</ul><br/>
 
-5.编译：在Maven Projects中展开julongchain => Lifecycle,选择双击compile编译  <br/>
-<br/>
-
-
+5.编译源码。
+<ul>
+<li>在Maven Projects视图中展开julongchain -> Lifecycle,选择双击compile进行编译。</li>
+</ul><br/>
 
 ## 当前版本
 当前版本为0.8。
